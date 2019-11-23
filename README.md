@@ -16,3 +16,5 @@ It handles cases where one or both of the segments are of length 0, return `true
 Methods are called with four arguments, `A, B, C, D`. Each of them is an array with two numbers, representing the coordinates of that point.
 
 Methods should return true or false based on wether or not `[AB]` and `[CD]` intersect.
+
+## [Try it out!](https://creativewolfies.github.io/intersections/index.html)
