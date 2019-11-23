@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>let methods = [];</script>
+    <script src="methods/scalar-projection.js"></script>
+    <script src="methods/matrix-inversion.js"></script>
+    <script src="./index.js" defer></script>
+    <title>Line Intersection</title>
+    <style>
+      #out {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      body, html {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #methods {
+        position: absolute;
+        padding-left: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        list-style-type: none;
+      }
+
+      #methods > li {
+        padding: 8px;
+        color: rgb(180, 180, 180);
+        cursor: pointer;
+      }
+
+      #methods > li.active {
+        color: white;
+      }
+
+      #methods.intersects > li {
+        color: rgb(82, 82, 82);
+      }
+
+      #methods.intersects > li.active {
+        color: black;
+      }
+
+      #methods > li.error {
+        color: red;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="out"></canvas>
+    <ul id="methods">
+    </ul>
+  </body>
+</html>
