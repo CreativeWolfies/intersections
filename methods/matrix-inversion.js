@@ -46,7 +46,7 @@ function matrix_inversion(A, B, C, D) {
   let s = m22 * vx + -m21 * vy;
   let t = -m12 * vx + m11 * vy;
 
-  return s >= 0 && s <= det && t >= 0 && t <= det
+  return s >= Math.min(0, det) && s <= Math.max(0, det) && t >= Math.min(0, det) && t <= Math.max(0, det);
 }
 
 methods.push(matrix_inversion);
